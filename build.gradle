@@ -10,7 +10,7 @@ repositories {
   mavenCentral()
 }
 
-checkstyle {
+aaa {
     configProperties 'workspace_loc': project.projectDir
     toolVersion = '8.25' 
     showViolations = true
@@ -18,7 +18,7 @@ checkstyle {
 }
 
 dependencies {
-    checkstyle "com.puppycrawl.tools:checkstyle:${project.extensions.checkstyle.toolVersion}"
+    checkstyle "com.puppycrawl.tools:checkstyle:${project.extensions.aaa.toolVersion}"
 }
 
 tasks.register('checkstyle').configure {
